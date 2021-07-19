@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
+    "handlebars": "^4.7.7",
     "heroku": "^7.56.1",
     "inquirer": "^8.1.2",
     "jquery": "^3.6.0",
