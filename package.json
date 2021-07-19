@@ -1,20 +1,8 @@
 {
   "name": "bubblez",
   "version": "1.0.0",
-  "description": "",
+  "description": "bubblez",
   "main": "server.js",
-  "dependencies": {
-    "express": "^4.17.1",
-    "handlebars": "^4.7.7",
-    "heroku": "^7.56.1",
-    "http": "0.0.1-security",
-    "inquirer": "^8.1.2",
-    "jquery": "^3.6.0",
-    "json": "^11.0.0",
-    "node": "^16.5.0",
-    "nodemon": "^2.0.12"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -23,10 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/lordozland/bubblez.git"
   },
-  "author": "",
+  "author": "Ptocojin Mystikoz",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lordozland/bubblez/issues"
   },
-  "homepage": "https://github.com/lordozland/bubblez#readme"
+  "homepage": "https://github.com/lordozland/bubblez#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.2",
+    "materialize": "^1.0.0",
+    "node": "^16.5.0",
+    "nodemon": "^2.0.12"
+  }
 }

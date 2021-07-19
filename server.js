@@ -1,42 +1,19 @@
-// const express = require('express');
-// const exphbs = require('express-handlebars');
-// const hbs = exphbs.create({});
+const express = require('express');
+const exphbs = require('express-handlebars');
 
-// const PORT = 3333;
+const app = express();
 
-// const handleRequest = (request, response) => {
-//     const path = req.url
+app.engine('hbs', exphbs({
+    defaultLayout: 'main',
+    extname: '.hbs'
+}));
 
-//     response.end(`It works! Path hit ${request.url}`)
-// };
+app.set('view engine', 'hbs');
 
-// const handleRequest = (req, res) => {
-//     const path = req.url;
-//     switch (path) {
-//       case '/':
-//         return displayRoot(res);
-  
-//       case '/portfolio':
-//         return displayPortfolio(res);
-  
-//       default:
-//         return display404(path, res);
-//     }
-//   };
+app.get('/', (req, res) => {
+    res.render('home');
+});
 
-// const server = http.createServer(handleRequest);
-
-// server.listen(PORT, () => console.log(`server is listening on local host ${PORT}`));
-
-
-const http = require('http')
-const fs = require('fs')
-const PORT = 3333
-
-const handleRequest = (req, res) => {
-
-}
-
-const server http.createServer(handleRequest)
-
-server.listen(PORT, () => console.log(`server is listening on local host ${PORT}`));
+app.listen(3333, () => {
+    console.log('The web server has started on port 3000');
+});
