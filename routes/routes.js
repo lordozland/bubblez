@@ -1,9 +1,10 @@
 const express = require('express');
+
 const router = require('express').Router();
 
 
 router.get('/', function(req, res, next) {
-  res.render('dashboard', {title:Express});
+  res.render('/main/main');
 });
 
 router.get('/design', function(req, res, next) {
@@ -15,7 +16,7 @@ router.get('/life', function(req, res, next) {
 });
 
 router.get('/navi', function(req, res, next) {
-    res.render('navi', {title:Express});
+    res.render('navi');
 });
 
 router.get('/reasons', function(req, res, next) {
@@ -24,6 +25,10 @@ router.get('/reasons', function(req, res, next) {
 
 router.get('/sound', function(req, res, next) {
     res.render('sound', {title:Express});
+});
+
+router.get('/418', function(req, res, next) {
+    res.render('418', {title:Express});
 });
 
 module.exports = router;
