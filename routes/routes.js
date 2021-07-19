@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 
 router.get('/', function(req, res, next) {
-  res.render('/main/main');
+  res.render('main/main');
 });
 
 router.get('/design', function(req, res, next) {

@@ -13,5 +13,3 @@ const handleRequest = (request, response) => {
 const server = http.createServer(handleRequest)
 
 server.listen(PORT, () => console.log(`server is listening on local host ${PORT}`))
-
-    
